@@ -5,7 +5,6 @@ module.exports = {
     screens: {
       xs: "375px",
       md: "750px",
-      lg: "1440px",
     },
     colors: {
       primary: "hsl(14, 45%, 36%)",
