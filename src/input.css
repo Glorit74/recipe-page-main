@@ -47,7 +47,7 @@
 
 @layer base {
   main {
-    @apply px-6;
+    @apply px-6 md:p-11 md:rounded-3xl lg:w-[750px];
   }
   h1 {
     @apply text-[2.8rem] font-serif text-myBlack font-[700] leading-tight tracking-wide my-2;
@@ -59,21 +59,20 @@
     @apply text-[1.1rem] text-primaryDark font-[600] mb-3;
   }
   p {
-    @apply leading-6 text-brown;
+    @apply leading-6;
   }
   ul,
   ol {
     @apply ml-4 list-inside;
-}
-ol {
-	@apply list-decimal list-outside 
-}
-li {
-	
-	@apply mb-3 last-of-type:mb-0 pl-3 marker:text-primaryDark;
+  }
+  ol {
+    @apply list-decimal list-outside;
+  }
+  li {
+    @apply mb-3 last-of-type:mb-0 pl-3 marker:text-primaryDark;
   }
 
   hr {
-	@apply mt-5;
+    @apply mt-6 mb-1;
   }
 }

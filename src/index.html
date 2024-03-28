@@ -13,7 +13,7 @@
     <link href="./output.css" rel="stylesheet" />
     <style>
       hr {
-        border-color: hsl(0, 0%, 70%);
+        border-color: hsl(30, 18%, 87%);
       }
       ol li::marker {
         font-weight: 600;
@@ -24,22 +24,23 @@
 	  }
     </style>
   </head>
-  <body class="relative container mx-auto font-sans size-sm">
+  <body class="relative container mx-auto font-sans size-sm text-charcoalDark bg-eggshell">
     <main class="bg-white">
-      <section @apply section>
-        <picture>
+      <section>
+        <div class="md:rounded-xl md:overflow-hidden">
           <img
             src="/assets/images/image-omelette.jpeg"
             alt="omelette with vegetables on plate"
+			class="w-full"
           />
-        </picture>
+        </div>
         <h1 class="leading-[1] my-8">Simple Omelette Recipe</h1>
         <p class="leading-relaxed">
           An easy and quick dish, perfect for any meal. This classic omelette
           combines beaten eggs cooked to perfection, optionally filled with your
           choice of cheese, vegetables, or meats.
         </p>
-        <div class="bg-roseWhite my-4 p-5 rounded-3xl">
+        <div class="bg-roseWhite my-6 py-5 pl-7 rounded-xl">
           <h3>Preparation time</h3>
           <ul class="list-disc list-outside">
             <li><strong>Total: </strong>Approximately 10 minutes</li>
@@ -102,22 +103,22 @@
           The table below shows nutritional values per serving without the
           additional fillings.
         </p>
-        <table class="w-full text-brown">
+        <table class="w-full text-charcoalDark">
           <tbody class="text-ms divide-solid divide-y-2 divide-grey">
-            <tr class="h-12">
-              <td class="w-1/2 pl-8">Calories</td>
+            <tr>
+              <td class="w-1/2 py-3 pl-8">Calories</td>
               <td class="text-primary font-bold">277kcal</td>
             </tr>
-            <tr class="h-12">
-              <td class="pl-8">Carbs</td>
+            <tr>
+              <td class="w-1/2 py-3 pl-8">Carbs</td>
               <td class="text-primary font-bold">0g</td>
             </tr>
-             <tr class="h-12">
-              <td class="pl-8">Protein</td>
+             <tr>
+              <td class="w-1/2 py-3 pl-8">Protein</td>
               <td class="text-primary font-bold">20g</td>
             </tr>
-             <tr class="h-12">
-              <td class="pl-8">Fat</td>
+             <tr>
+              <td class="w-1/2 pt-3 pl-8">Fat</td>
               <td class="text-primary font-bold">22g</td>
             </tr>
           </tbody>
