@@ -14,12 +14,11 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 
-
 ## Overview
 
 ### Screenshot
 
-![Mobile view](./assets/images/Screenshot%20FMr%20Recipe%20page.png)
+![Mobile view](./assets/images/Screenshot_FM_Recipe.png)
 
 ### Links
 
@@ -65,5 +64,3 @@ I failed to use the variable font with tailwind
 ### Useful resources
 
 - [counter-increment with CSS](https://www.w3schools.com/cssref/pr_gen_counter-increment.php) - This helped me to make my custome ordered list.
-
-

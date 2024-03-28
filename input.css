@@ -47,7 +47,7 @@
 
 @layer base {
   main {
-    @apply px-6 md:p-11 md:rounded-3xl md:w-[750px];
+    @apply px-6 md:p-11 md:rounded-3xl md:w-[750px] md:my-8;
   }
   h1 {
     @apply text-[2.8rem] font-serif text-myBlack font-[700] leading-tight tracking-wide my-2;
