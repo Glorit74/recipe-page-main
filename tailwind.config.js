@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["**/*.{html,js}"],
   theme: {
     screens: {
       xs: "375px",
@@ -19,7 +19,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        serif: ["Young", "serif"],
+        serif: ["Young Serif", "serif"],
         sans: ["Outfit", "sans-serif"],
       },
     },

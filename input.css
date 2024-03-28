@@ -9,61 +9,26 @@
   scroll-behavior: smooth;
 }
 
-@font-face {
-  font-family: "Outfit";
-  src: url(/assets/fonts/outfit/static/Outfit-Bold.ttf) format("ttf");
-  font-style: normal;
-  font-weight: 700;
-  font-display: optional;
-}
-@font-face {
-  font-family: "Outfit";
-  src: url(/assets/fonts/outfit/static/Outfit-SemiBold.ttf) format("ttf");
-  font-style: normal;
-  font-weight: 600;
-  font-display: optional;
-}
-@font-face {
-  font-family: "Outfit";
-  src: url(/assets/fonts/outfit/static/Outfit-Medium.ttf) format("ttf");
-  font-style: normal;
-  font-weight: 500;
-  font-display: optional;
-}
-@font-face {
-  font-family: "Outfit";
-  src: url(/assets/fonts/outfit/static/Outfit-Rerular.ttf) format("ttf");
-  font-style: normal;
-  font-weight: 400;
-  font-display: optional;
-}
-@font-face {
-  font-family: "Young";
-  src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf) format("ttf");
-  font-style: normal;
-  font-weight: 400;
-  font-display: optional;
-}
 
 @layer base {
   main {
-    @apply px-6 md:p-11 md:rounded-3xl md:w-[750px] md:my-8;
+    @apply px-6 md:p-11 md:rounded-3xl md:w-[750px] md:my-[6rem];
   }
   h1 {
-    @apply text-[2.8rem] font-serif text-myBlack font-[700] leading-tight tracking-wide my-2;
+    @apply text-[2.6rem] font-serif text-myBlack  leading-tight tracking-wide my-2;
   }
   h2 {
-    @apply text-[2rem] font-serif font-[600]  text-primary my-3;
+    @apply text-[1.8rem] font-serif  text-primary my-3;
   }
   h3 {
-    @apply text-[1.1rem] text-primaryDark font-[600] mb-3;
+    @apply text-[1.3rem] text-primaryDark font-[600] mb-3;
   }
   p {
     @apply leading-6;
   }
   ul,
   ol {
-    @apply ml-4 list-inside;
+    @apply ml-4;
   }
   ol {
     @apply list-decimal list-outside;
