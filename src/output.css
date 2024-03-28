@@ -446,6 +446,79 @@ video {
   display: none;
 }
 
+main {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+h1 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  font-family: Young, serif;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: 0.025em;
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 10% / var(--tw-text-opacity));
+}
+
+h2 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-family: Young, serif;
+  font-size: 2rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: hsl(14 45% 36% / var(--tw-text-opacity));
+}
+
+h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  --tw-text-opacity: 1;
+  color: hsl(332 51% 32% / var(--tw-text-opacity));
+}
+
+p {
+  line-height: 1.5rem;
+  --tw-text-opacity: 1;
+  color: hsl(30 10% 34% / var(--tw-text-opacity));
+}
+
+ul,
+  ol {
+  margin-left: 1rem;
+  list-style-position: inside;
+}
+
+ol {
+  list-style-position: outside;
+  list-style-type: decimal;
+}
+
+li {
+  margin-bottom: 0.75rem;
+  padding-left: 0.75rem;
+}
+
+li *::marker {
+  color: hsl(332 51% 32% );
+}
+
+li::marker {
+  color: hsl(332 51% 32% );
+}
+
+li:last-of-type {
+  margin-bottom: 0px;
+}
+
+hr {
+  margin-top: 1.25rem;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -576,28 +649,8 @@ video {
   }
 }
 
-.fixed {
-  position: fixed;
-}
-
-.bottom-0 {
-  bottom: 0px;
-}
-
-.left-0 {
-  left: 0px;
-}
-
-.right-0 {
-  right: 0px;
-}
-
-.bottom-1 {
-  bottom: 0.25rem;
-}
-
-.bottom-2 {
-  bottom: 0.5rem;
+.relative {
+  position: relative;
 }
 
 .mx-auto {
@@ -605,12 +658,61 @@ video {
   margin-right: auto;
 }
 
+.my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
 .table {
   display: table;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
+.h-12 {
+  height: 3rem;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.list-outside {
+  list-style-position: outside;
+}
+
+.list-disc {
+  list-style-type: disc;
+}
+
+.divide-y-2 > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-y-reverse: 0;
+  border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
+  border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
+}
+
+.divide-solid > :not([hidden]) ~ :not([hidden]) {
+  border-style: solid;
+}
+
+.divide-grey > :not([hidden]) ~ :not([hidden]) {
+  --tw-divide-opacity: 1;
+  border-color: hsl(30 18% 87% / var(--tw-divide-opacity));
+}
+
+.rounded-3xl {
+  border-radius: 1.5rem;
 }
 
 .bg-roseWhite {
@@ -618,19 +720,117 @@ video {
   background-color: hsl(330 100% 98% / var(--tw-bg-opacity));
 }
 
-.p-3 {
-  padding: 0.75rem;
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: hsl(0 0% 100% / var(--tw-bg-opacity));
+}
+
+.p-5 {
+  padding: 1.25rem;
+}
+
+.pl-8 {
+  padding-left: 2rem;
 }
 
 .text-center {
   text-align: center;
 }
 
+.font-sans {
+  font-family: Outfit, sans-serif;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.leading-\[1\] {
+  line-height: 1;
+}
+
+.leading-relaxed {
+  line-height: 1.625;
+}
+
+.text-primary {
+  --tw-text-opacity: 1;
+  color: hsl(14 45% 36% / var(--tw-text-opacity));
 }
 
 .text-brown {
   --tw-text-opacity: 1;
   color: hsl(30 10% 34% / var(--tw-text-opacity));
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Outfit";
+
+  src: url(/assets/fonts/outfit/static/Outfit-Bold.ttf) format("ttf");
+
+  font-style: normal;
+
+  font-weight: 700;
+
+  font-display: optional;
+}
+
+@font-face {
+  font-family: "Outfit";
+
+  src: url(/assets/fonts/outfit/static/Outfit-SemiBold.ttf) format("ttf");
+
+  font-style: normal;
+
+  font-weight: 600;
+
+  font-display: optional;
+}
+
+@font-face {
+  font-family: "Outfit";
+
+  src: url(/assets/fonts/outfit/static/Outfit-Medium.ttf) format("ttf");
+
+  font-style: normal;
+
+  font-weight: 500;
+
+  font-display: optional;
+}
+
+@font-face {
+  font-family: "Outfit";
+
+  src: url(/assets/fonts/outfit/static/Outfit-Rerular.ttf) format("ttf");
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: optional;
+}
+
+@font-face {
+  font-family: "Young";
+
+  src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf) format("ttf");
+
+  font-style: normal;
+
+  font-weight: 400;
+
+  font-display: optional;
 }

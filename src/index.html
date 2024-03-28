@@ -9,46 +9,49 @@
       sizes="32x32"
       href="./assets/images/favicon-32x32.png"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap"
-      rel="stylesheet"
-    />
     <title>Frontend Mentor | Recipe page</title>
     <link href="./output.css" rel="stylesheet" />
+    <style>
+      hr {
+        border-color: hsl(0, 0%, 70%);
+      }
+      ol li::marker {
+        font-weight: 600;
+		color:hsl(14 45% 36%);
+      }
+	  strong {
+		color: hsl(30, 10%, 34%);
+	  }
+    </style>
   </head>
-  <body>
-    <main class="container mx-auto">
-      <section>
+  <body class="relative container mx-auto font-sans size-sm">
+    <main class="bg-white">
+      <section @apply section>
         <picture>
           <img
             src="/assets/images/image-omelette.jpeg"
             alt="omelette with vegetables on plate"
           />
         </picture>
-        <h1 class="text-3xl font-bold text-brown">Simple Omelette Recipe</h1>
-        <p>
+        <h1 class="leading-[1] my-8">Simple Omelette Recipe</h1>
+        <p class="leading-relaxed">
           An easy and quick dish, perfect for any meal. This classic omelette
           combines beaten eggs cooked to perfection, optionally filled with your
           choice of cheese, vegetables, or meats.
         </p>
-        <div class="bg-roseWhite p-3 rounded-lg">
+        <div class="bg-roseWhite my-4 p-5 rounded-3xl">
           <h3>Preparation time</h3>
-          <ul>
-            <li><strong>Total:</strong>Approximately 10 minutes</li>
-            <li><strong>Preparation:</strong> 5 minutes</li>
-            <li><strong>Cooking:</strong> 5 minutes</li>
+          <ul class="list-disc list-outside">
+            <li><strong>Total: </strong>Approximately 10 minutes</li>
+            <li><strong>Preparation: </strong> 5 minutes</li>
+            <li><strong>Cooking: </strong> 5 minutes</li>
           </ul>
         </div>
       </section>
+
       <section>
         <h2>Ingredients</h2>
-        <ul>
+        <ul class="list-disc list-outside">
           <li>2-3 large eggs</li>
           <li>Salt, to taste</li>
           <li>Pepper, to taste</li>
@@ -58,9 +61,10 @@
           </li>
         </ul>
       </section>
+      <hr />
       <section>
         <h2>Instructions</h2>
-        <ol>
+        <ol class="custom-ol">
           <li>
             <strong>Beat the eggs:</strong> In a bowl, beat the eggs with a
             pinch of salt and pepper until they are well mixed. You can add a
@@ -91,34 +95,37 @@
           </li>
         </ol>
       </section>
+      <hr />
       <section>
         <h2>Nutrition</h2>
         <p>
           The table below shows nutritional values per serving without the
           additional fillings.
         </p>
-        <table>
-          <tr>
-            <td>Calories</td>
-            <td>277kcal</td>
-          </tr>
-          <tr>
-            <td>Carbs</td>
-            <td>0g</td>
-          </tr>
-          <tr>
-            <td>Protein</td>
-            <td>20g</td>
-          </tr>
-          <tr>
-            <td>Fat</td>
-            <td>22g</td>
-          </tr>
+        <table class="w-full text-brown">
+          <tbody class="text-ms divide-solid divide-y-2 divide-grey">
+            <tr class="h-12">
+              <td class="w-1/2 pl-8">Calories</td>
+              <td class="text-primary font-bold">277kcal</td>
+            </tr>
+            <tr class="h-12">
+              <td class="pl-8">Carbs</td>
+              <td class="text-primary font-bold">0g</td>
+            </tr>
+             <tr class="h-12">
+              <td class="pl-8">Protein</td>
+              <td class="text-primary font-bold">20g</td>
+            </tr>
+             <tr class="h-12">
+              <td class="pl-8">Fat</td>
+              <td class="text-primary font-bold">22g</td>
+            </tr>
+          </tbody>
         </table>
       </section>
     </main>
 
-    <footer class="attribution fixed bottom-2 left-0 right-0 text-center">
+    <footer class="attribution text-center text-sm mt-4">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a

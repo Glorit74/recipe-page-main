@@ -1,3 +1,79 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url(/assets/fonts/outfit/static/Outfit-Bold.ttf) format("ttf");
+  font-style: normal;
+  font-weight: 700;
+  font-display: optional;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url(/assets/fonts/outfit/static/Outfit-SemiBold.ttf) format("ttf");
+  font-style: normal;
+  font-weight: 600;
+  font-display: optional;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url(/assets/fonts/outfit/static/Outfit-Medium.ttf) format("ttf");
+  font-style: normal;
+  font-weight: 500;
+  font-display: optional;
+}
+@font-face {
+  font-family: "Outfit";
+  src: url(/assets/fonts/outfit/static/Outfit-Rerular.ttf) format("ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: optional;
+}
+@font-face {
+  font-family: "Young";
+  src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf) format("ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: optional;
+}
+
+@layer base {
+  main {
+    @apply px-6;
+  }
+  h1 {
+    @apply text-[2.8rem] font-serif text-myBlack font-[700] leading-tight tracking-wide my-2;
+  }
+  h2 {
+    @apply text-[2rem] font-serif font-[600]  text-primary my-3;
+  }
+  h3 {
+    @apply text-[1.1rem] text-primaryDark font-[600] mb-3;
+  }
+  p {
+    @apply leading-6 text-brown;
+  }
+  ul,
+  ol {
+    @apply ml-4 list-inside;
+}
+ol {
+	@apply list-decimal list-outside 
+}
+li {
+	
+	@apply mb-3 last-of-type:mb-0 pl-3 marker:text-primaryDark;
+  }
+
+  hr {
+	@apply mt-5;
+  }
+}
